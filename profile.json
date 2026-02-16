@@ -1,12 +1,36 @@
 {
   "name": "Tomáš Obermajer",
   "skills": [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Git",
-    "Photoshop",
-    "Canva"
+    {
+      "name": "HTML",
+      "description": "Tvorba moderních, responzivních webových stránek",
+      "level": 85
+    },
+    {
+      "name": "CSS",
+      "description": "Stylování a design webových aplikací",
+      "level": 80
+    },
+    {
+      "name": "JavaScript",
+      "description": "Interaktivita a dynamické prvky na webu",
+      "level": 75
+    },
+    {
+      "name": "Git",
+      "description": "Verzování kódu a spolupráce na projektech",
+      "level": 70
+    },
+    {
+      "name": "Photoshop",
+      "description": "Pokročilé úpravy obrázků a grafiky",
+      "level": 70
+    },
+    {
+      "name": "Canva",
+      "description": "Tvorba jednoduchých grafických návrhů",
+      "level": 75
+    }
   ],
   "interests": [
     "Web development",

@@ -294,27 +294,7 @@ section h2 {
 }
 
 /* ===== DYNAMICKÉ SKILLS ===== */
-#skills {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  padding: 0;
-  justify-content: center;
-}
-
-#skills li {
-  background: #38bdf8;
-  color: #020617;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: transform 0.3s;
-}
-
-#skills li:hover {
-  transform: scale(1.05);
-}
+/* Odebráno - používají se původní skill-card styly */
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
@@ -328,14 +308,5 @@ section h2 {
 
   .interests ul {
     grid-template-columns: 1fr;
-  }
-
-  #skills {
-    justify-content: flex-start;
-  }
-
-  #skills li {
-    padding: 8px 15px;
-    font-size: 0.9rem;
   }
 }

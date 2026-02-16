@@ -10,11 +10,19 @@ fetch('profile.json')
     document.querySelector('#name').textContent = 'Ahoj, já jsem ' + data.name;
 
     // Vygenerovat seznam dovedností
-    const skillsUl = document.querySelector('#skills');
+    const skillsContainer = document.querySelector('.skills-grid');
+    skillsContainer.innerHTML = ''; // Vyčistit statický obsah
     data.skills.forEach(skill => {
-      const li = document.createElement('li');
-      li.textContent = skill;
-      skillsUl.appendChild(li);
+      const skillCard = document.createElement('div');
+      skillCard.className = 'skill-card';
+      skillCard.innerHTML = `
+        <h3>${skill.name}</h3>
+        <p>${skill.description}</p>
+        <div class="skill-level">
+          <div class="level-bar" style="width: ${skill.level}%"></div>
+        </div>
+      `;
+      skillsContainer.appendChild(skillCard);
     });
 
     // Vygenerovat zájmy
