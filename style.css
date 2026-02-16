@@ -315,3 +315,27 @@ section h2 {
 #skills li:hover {
   transform: scale(1.05);
 }
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .interests ul {
+    grid-template-columns: 1fr;
+  }
+
+  #skills {
+    justify-content: flex-start;
+  }
+
+  #skills li {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
