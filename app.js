@@ -43,7 +43,7 @@ fetch('profile.json')
       projectDiv.innerHTML = `
         <h3>${project.title}</h3>
         <p>${project.description}</p>
-        <a href="${project.link}" target="_blank">Zobrazit projekt</a>
+        <a href="${project.link}" target="_blank">Zobrazit na GitHub</a>
       `;
       projectsSection.appendChild(projectDiv);
     });
